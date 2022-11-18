@@ -1,0 +1,21 @@
+body {
+    font-family: Verdana;
+    font-size: 1.1em;
+    background-color: silver;
+    color: darkblue;
+}
+
+h1 {
+    font-variant: all-small-caps;
+    background-color: red;
+    width: 50%;
+}
+
+a:hover {
+    display: table;
+}
+
+.stippeltjesrand{
+    table-layout: fixed;
+    tab
+}
