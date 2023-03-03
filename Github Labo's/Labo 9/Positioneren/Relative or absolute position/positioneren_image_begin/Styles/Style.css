@@ -1,0 +1,26 @@
+article {
+    border: 1px solid black;
+    padding: 10px;
+    min-height: 280px;
+    margin: 0 10px 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.25;
+    margin: 0;
+}
+/* Article zal hier zijn child img (alle oneven images) Links floaten */
+article:nth-child(odd) img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+/* Article zal hier zijn img (alle even images) Rechts floaten */
+article:nth-child(even) img {
+    float: right;
+    margin: 0 0 0 10px;
+}

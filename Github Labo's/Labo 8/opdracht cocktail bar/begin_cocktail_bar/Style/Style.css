@@ -1,0 +1,90 @@
+body {
+    font-family: Verdana, Helvetica, Arial;
+    font-size: 1.2em;
+}
+
+h1, h2{
+    color: #007e7e
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2{
+    font-size: 130%;
+}
+
+header {
+    text-align: center;
+}
+
+#wrapper {
+    /* Margins zo instellen om canvas te centreren*/
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%; /* Site maakt gebruik van 95% van de canvas (scherm)*/
+}
+
+body > div > article {
+    /* Article rechts pushen met 30% width*/
+    /* Border box gebruiken om margins niet bij te tellen en zo precies 100% te hebben van je canvas */
+    width: 30%;
+    float: right;
+    box-sizing: border-box;
+
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: center;
+
+    /* Gebruikt om je afbeelding op achtergrond te repeaten op x-as (kan ook op y-as)*/
+    background-image: url("../images/cocktail.gif");
+    background-repeat: repeat-x;
+}
+
+body > div > article > h1 {
+    color: black    ;
+}
+
+body > div > article > h2 {
+    color: orange;
+}
+
+body > div > section > article {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+#guarantee {
+    margin: 30px;
+    padding: 20px;
+    color: #444444;
+    background-color: #a7cece;
+    border-style: dotted;
+    border-color: white;
+}
+
+#guarantee img {
+    /* Steekt de image in een block element waardoor die makkelijk kan verschuiven, in dit geval met float element */
+    display: block;
+    float: left;
+}
+
+footer {
+    clear: both; /* Aan beide kanten geen float elementen aanvaaren = alleen staan*/
+    text-align: center;
+    font-size: 0.6em;
+}
+
+body > div > article > p > a:hover {
+    color: saddlebrown;
+}
+
+span {
+    font-weight: bold;
+}
+
+span_I {
+    font-style: italic;
+}

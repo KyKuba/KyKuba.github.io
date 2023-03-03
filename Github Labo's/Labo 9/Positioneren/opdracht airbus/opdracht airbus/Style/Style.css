@@ -1,0 +1,123 @@
+/* Margin - || Border - Padding - Width - Padding - Border || - Margin */
+/*          ||                                             ||       */
+
+body {
+    margin: 0px auto;
+    padding: 0px;
+    width: 960px;
+    /* Zorgt voor die coole achtergrond, idk how*/
+    background: #E6E6E6 url('../fotos/pagebackground.png') repeat-y center top;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#top {
+    height: 200px;
+    text-align: center;
+    background: url('../fotos/bgsky3.jpg');
+    color: darkblue;
+    color: darkblue;
+}
+
+#top img {
+    position: absolute; /* vliegtuig absoluut positioneren tov dichtste */
+    right: 370px;
+    bottom: 580px;
+}
+
+#top h1 {
+    margin: 0px; /* Om we whitespace boven je header picture weg te halen */
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header > p {
+    font-size: 240%;
+    font-weight: bold;
+}
+
+#news {
+    width: 250px;
+    background-color: #dddddd;
+    border: 1px;
+    border-color: #999999;
+    color: #666666;
+    font-size: 90%;
+    padding: 10px;
+    float: right;
+    box-sizing: border-box;
+}
+
+#news h1 {
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align: center;
+}
+
+#main {
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 130px;
+    display: block;
+}
+
+#logo {
+    box-sizing: border-box;
+    float:left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.gallery
+{
+    background-color: #999999;
+    margin-right: 10px;
+}
+
+.foto
+{
+    border: 1px dotted #999999;
+    padding:10px;
+    background-color: white;
+    display: inline-block;
+    margin: 10px;
+}
+.foto img
+{
+    width: 180px;
+    height: 180px;
+}
+
+.bottom
+{
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+
+}
+.bottom div
+{
+    margin-left:120px;
+    display: inline-block;
+}
+
+.bottom a
+{
+    color: white;
+}
+
+.bottom a:hover
+{
+    color: red;
+}
+
+
+footer {
+    clear: both;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+

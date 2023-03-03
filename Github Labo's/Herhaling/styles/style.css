@@ -1,0 +1,248 @@
+/** Volgende CSS gaan we ze geven **/
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    border-bottom: 2px solid black;
+    color: black;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+header {
+    border-bottom: 1px solid #ebe8e8;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+/* header img lukt niet dus maken we div met klasse*/
+/* Ook nodig om de grootte aan te maken width 980px om dan aan
+te passen */
+.logo img{
+    height: 50px;
+    width: auto;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /* GEEN BOL BIJ LI */
+    list-style: none;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+nav ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 1px solid #ebe8e8;
+    text-transform: uppercase;
+    /* GEEN LIJN ONDER TEXT */
+    text-decoration: none;
+    color: #5b4746;
+    font-size: 13px;
+    /* CENTREREN!!! */
+    text-align: center;
+}
+
+nav ul li:last-child{
+    border: none;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid #fff100;
+    /* ZORGT DAT JE LIJN NIETS LAAT BEWEGEN!! */
+    padding-bottom: 8px;
+}
+
+main .mainHeader {
+
+    height: 500px;
+    background-image: url("../images/headerimage.jpg");
+    /* Afbeelding Horizontaal & Verticaal centreren!! */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.mainText {
+    color: white;
+    font-size: 40px;
+    text-shadow: #8D99AE 2px 2px;
+    /*Centreren van je text op basis van je mainHeader (img) */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.recipes {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+.gridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+}
+
+.article {
+    margin-right: 1.5em;
+    margin-top: 1em;
+    border-top: 1px solid #ddd;
+}
+
+.kicker {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #ff4d56;
+}
+
+h2 a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 a:link {
+    text-decoration: none;
+    color: black;
+}
+
+h2 a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.body {
+    /* lijnhoogte 2 */
+    line-height: 2em;
+    color: #666;
+}
+
+.author {
+    padding-right: 10px;
+    border-right: 1px solid #ebe8e8;
+    font-style: italic;
+}
+
+.timestamp {
+    padding-left: 10px;
+    color: #666;
+}
+
+.recommended {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+.recommended img {
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1000px){
+    header {
+        width: 980px;
+    }
+
+    nav {
+        width: 980px;
+    }
+
+    .recipes {
+        width: 980px;
+    }
+
+    .recommended {
+        width: 980px;
+    }
+}
+
+
+
+@media screen and (max-width: 770px){
+    header {
+        width: 750px;
+    }
+
+    nav {
+        width: 750px;
+    }
+
+    .recipes {
+        width: 750px;
+    }
+
+    .recommended{
+        width: 980px;
+    }
+
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid #ebe8e8;
+}
+
+#left {
+    float: left;
+    text-align: right;
+    width: 50%;
+    line-height: 2em;
+    padding-right: 20px;
+}
+
+#right {
+    float: right;
+    text-align: left;
+    width: 50%;
+    line-height: 2em;
+    background-color: black;
+    padding-left: 20px;
+    color: white;
+}
+
+@media screen and (min-width: 800px)
+{
+    .mainText
+    {
+        font-size: 5em;
+    }
+}
