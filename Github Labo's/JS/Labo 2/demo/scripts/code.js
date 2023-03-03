@@ -23,6 +23,10 @@ const withoutBullets = () => {
     let listItems = document.getElementsByTagName("li");
     for (let i = 0; i < listItems.length; i++)
     {
+        listItems[i].style.listStyleType="none";
+        listItems[i].style.backgroundColor="red";
+        //2de manier die beter is en overzichtelijker!
+        // listItems[i].className = "listItemsStyleNone colorRed";
         
     }
 }
